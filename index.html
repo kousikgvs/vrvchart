@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor Form</title>
+    <style>
+
+    </style>
+    <style>
+        @media print {
+            button {
+                display: none;
+            }
+        }
+
+        header {
+            width: 99%;
+            height: 80px;
+            /* You can adjust the height as needed */
+            background-color: #333;
+            /* Background color for the header */
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 0 20px;
+        }
+
+        /* Position the image at the top right */
+        header img {
+            position: absolute;
+            top: 10px;
+            /* Adjust as needed */
+            right: 20px;
+            /* Adjust as needed */
+            height: 60px;
+            /* Adjust image size */
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="image.png" alt="Logo">
+    </header>
+    <h1 style="color: rgb(255, 255, 255);">VRV ASIA PACIFIC PRIVATE LIMITED</h1>
+    <div style="display: flex; justify-content: center; align-items: center;">
+        <p style="color: rgb(255, 255, 255); text-align: center; width: 1000px;">
+            NOTE: The information requested below will assist us to evaluate your firm to become our approved
+            Vendor/Supplier. Please use separate sheets if space is inadequate. You are required to return the completed
+            assessment form promptly to allow us to process your application as a potential supplier.
+        </p>
+    </div>
+
+    <form>
+        <!-- Personal and Company Information -->
+        <label>Title:</label>
+        <select name="title">
+            <option value="Mr.">Mr.</option>
+            <option value="Mr. and Mrs.">Mr. and Mrs.</option>
+            <option value="Ms.">Ms.</option>
+        </select>
+        <br>
+        <label>Company Name:</label>
+        <input type="text" name="companyName">
+        <br>
+        <label>Address:</label>
+        <input type="text" name="address">
+        <br>
+        <label>City:</label>
+        <input type="text" name="city">
+        <br>
+        <label>Telephone:</label>
+        <input type="text" name="telephone">
+        <br>
+        <label>Fax:</label>
+        <input type="text" name="fax">
+        <br>
+        <label>State:</label>
+        <input type="text" name="state">
+        <br>
+        <label>ZIP:</label>
+        <input type="text" name="zip">
+        <br>
+        <label>Person to Contact:</label>
+        <input type="text" name="contactPerson">
+        <br>
+        <label>Email ID:</label>
+        <input type="email" name="email">
+        <br>
+        <label>Mobile:</label>
+        <input type="text" name="mobile">
+        <br>
+
+        <!-- Business Type -->
+        <label>Type of Business:</label>
+        <div>
+            <input type="checkbox" name="businessType" value="Proprietorship"> Proprietorship
+            <input type="checkbox" name="businessType" value="Partnership"> Partnership
+            <input type="checkbox" name="businessType" value="Private Ltd."> Private Ltd.
+            <input type="checkbox" name="businessType" value="Public Ltd."> Public Ltd.
+            <input type="checkbox" name="businessType" value="Manufacturer"> Manufacturer
+            <input type="checkbox" name="businessType" value="Supplier"> Supplier
+            <input type="checkbox" name="businessType" value="Dealer"> Dealer
+        </div>
+        <br>
+
+        <!-- Vendor Group -->
+        <label>Vendor Group:</label>
+        <div>
+            <input type="checkbox" name="vendorGroup" value="National Vendor"> National Vendor
+            <input type="checkbox" name="vendorGroup" value="Import Vendor"> Import Vendor
+        </div>
+
+        <!-- Product Range -->
+        <label>Range of products manufactured/supplied:</label>
+        <textarea name="productRange"></textarea>
+        <br>
+
+        <!-- Machinery -->
+        <label>List of machinery / equipment:</label>
+        <textarea name="machinery"></textarea>
+        <br>
+
+        <!-- Additional Inputs -->
+        <label>No. of Employees:</label>
+        <textarea name="employees"></textarea>
+        <br>
+        <label>Turnover (Last Two Years):</label>
+        <textarea name="turnover"></textarea>
+        <br>
+        <label>Year of Establishment:</label>
+        <textarea name="yearOfEstablishment"></textarea>
+        <br>
+        <label>Service Setup Location:</label>
+        <textarea name="serviceSetupLocation"></textarea>
+        <br>
+
+        <!-- Major Customers -->
+        <label>Major Customers:</label>
+        <textarea name="majorCustomers[]"></textarea>
+        <br>
+
+        <!-- Transport Facilities -->
+        <label>Transport Facilities:</label>
+        <textarea name="transportFacilities"></textarea>
+        <br>
+
+        <!-- Delivery Terms -->
+        <label>Inco Terms/Delivery Terms:</label>
+        <div>
+            <input type="checkbox" name="deliveryTerms" value="CIF"> CIF
+            <input type="checkbox" name="deliveryTerms" value="Ex Works"> Ex Works
+            <input type="checkbox" name="deliveryTerms" value="Free House"> Free House
+            <input type="checkbox" name="deliveryTerms" value="Free on Board"> Free on Board
+        </div>
+        <br>
+
+        <!-- Payment Terms -->
+        <label>Payment Terms:</label>
+        <textarea name="paymentTerms"></textarea>
+        <br>
+
+        <!-- Verification of Capability -->
+        <label>Verification of Capability:</label>
+        <input type="radio" name="verification" value="YES"> YES
+        <input type="radio" name="verification" value="NO"> NO
+        <input type="text" name="remarks1" placeholder="Remarks">
+        <br>
+
+        <!-- Quality Control -->
+        <label>Quality Control:</label>
+        <input type="radio" name="qualityControl" value="YES"> YES
+        <input type="radio" name="qualityControl" value="NO"> NO
+        <input type="text" name="remarks2" placeholder="Remarks">
+        <br>
+
+        <!-- ISO Certification -->
+        <label>ISO 9001 Certified:</label>
+        <input type="radio" name="isoCert" value="YES"> YES
+        <input type="radio" name="isoCert" value="NO"> NO
+        <input type="text" name="remarks3" placeholder="Remarks">
+        <br>
+
+        <!-- Test Certificate -->
+        <label>Test Certificate:</label>
+        <input type="radio" name="testCertificate" value="YES"> YES
+        <input type="radio" name="testCertificate" value="NO"> NO
+        <input type="text" name="remarks4" placeholder="Remarks">
+        <br>
+
+        <!-- Upgrade Performance -->
+        <label>Ready to Upgrade Performance:</label>
+        <input type="radio" name="upgradePerformance" value="YES"> YES
+        <input type="radio" name="upgradePerformance" value="NO"> NO
+        <input type="text" name="remarks5" placeholder="Remarks">
+        <br>
+
+        <!-- Statutory Details -->
+        <label>GST No.:</label>
+        <input type="text" name="gstNo">
+        <br>
+        <label>Excise Range:</label>
+        <input type="text" name="exciseRange">
+        <br>
+        <label>ECC No.:</label>
+        <input type="text" name="eccNo">
+        <br>
+        <label>TIN No.:</label>
+        <input type="text" name="tinNo">
+        <br>
+        <label>Local ST:</label>
+        <input type="text" name="localST">
+        <br>
+        <label>Excise Registration No.:</label>
+        <input type="text" name="exciseRegNo">
+        <br>
+        <label>PAN No.:</label>
+        <input type="text" name="panNo">
+        <br>
+
+        <!-- Bank Details -->
+        <label>Bank Name:</label>
+        <input type="text" name="bankDetails.bankName">
+        <br>
+        <label>Bank Code:</label>
+        <input type="text" name="bankDetails.bankCode">
+        <br>
+        <label>Bank Account Number:</label>
+        <input type="text" name="bankDetails.accountNumber">
+        <br>
+        <label>Bank Address:</label>
+        <input type="text" name="bankDetails.bankAddress">
+        <br>
+        <label>Account Type:</label>
+        <input type="text" name="bankDetails.accountType">
+        <br>
+        <label>SWIFT Code:</label>
+        <input type="text" name="bankDetails.swiftCode">
+        <br>
+        <label>Currency:</label>
+        <input type="radio" name="bankDetails.currency" value="USD"> USD
+        <input type="radio" name="bankDetails.currency" value="INR"> INR
+        <br>
+
+        <!-- Signature and Remarks -->
+        <label>Remarks:</label>
+        <textarea name="remarks"></textarea>
+        <br>
+        <label>Designation:</label>
+        <input type="text" name="designation">
+        <br>
+
+        <!-- Submit Button -->
+        <button onclick="window.print()">Submit</button>
+    </form>
+
+</body>
+
+</html>
